@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">Ad Free App Manager</string>
+    <string name="app_name_list_item">App Name</string>
+    <string name="app_package_name">App package name</string>
+    <string name="application_icon">Application Icon</string>
+</resources>

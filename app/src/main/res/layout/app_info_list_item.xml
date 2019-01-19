@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent"
+                android:layout_height="match_parent" android:orientation="vertical" android:id="@+id/AppListItem">
+    <androidx.constraintlayout.widget.ConstraintLayout android:layout_width="match_parent"
+                                                       android:layout_height="wrap_content"
+                                                       android:id="@+id/linearLayout"
+                                                       android:layout_alignParentTop="true"
+                                                       android:layout_marginTop="0dp"
+                                                       android:layout_alignParentStart="true"
+                                                       android:layout_alignParentLeft="true">
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                  android:text="@string/app_package_name"
+                  android:id="@+id/appPackageName"
+                  app:layout_constraintTop_toBottomOf="@+id/ListItemAppName"
+                  app:layout_constraintStart_toEndOf="@+id/app_icon"
+                  app:layout_constraintBottom_toBottomOf="parent"/>
+
+        <CheckBox android:layout_width="36dp" android:layout_height="38dp"
+                  android:id="@+id/appCheckbox"
+                  app:layout_constraintEnd_toEndOf="parent"
+                  app:layout_constraintBottom_toBottomOf="parent"
+                  app:layout_constraintTop_toTopOf="parent" android:onClick="ShowFAB"/>
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                  android:text="@string/app_name_list_item" android:id="@+id/ListItemAppName"
+                  app:layout_constraintStart_toEndOf="@+id/app_icon"
+                  app:layout_constraintTop_toTopOf="parent"/>
+        <ImageView android:layout_width="36dp" android:layout_height="36dp" android:id="@+id/app_icon"
+                   app:layout_constraintStart_toStartOf="parent"
+                   app:layout_constraintTop_toTopOf="parent"
+                   app:layout_constraintBottom_toBottomOf="parent"
+                   android:contentDescription="@string/application_icon"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</RelativeLayout>
